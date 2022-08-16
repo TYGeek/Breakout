@@ -23,6 +23,7 @@ RUN apt-get update && \
         libssl-dev \
         manpages-dev \
         gdb gdbserver \
+        git \
         cmake && \
     apt-get clean
 
@@ -31,5 +32,3 @@ ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 
 # Set the default user
 USER $USERNAME
-
-
