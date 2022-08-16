@@ -1,0 +1,9 @@
+services:
+  breakout:
+    build: 
+      context: "."
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    container_name: breakout-dev
+    volumes:
+      - ${PROJ_ROOT}:${PROJ_ROOT}
